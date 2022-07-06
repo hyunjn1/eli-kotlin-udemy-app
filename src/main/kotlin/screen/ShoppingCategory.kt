@@ -20,8 +20,8 @@ class ShoppingCategory : Screen() {
         } else {
 
             if (categories.contains(selectedCategory)) {
-                val shoppingProductList = ShoppingProductList()
-                shoppingProductList.showProducts(selectedCategory)
+                val shoppingProductList = ShoppingProductList(selectedCategory)
+                shoppingProductList.showProducts()
             } else {
                 showErrorMessage(selectedCategory)
                 // 함수로 전환해서 else 단에서 어떤 행위를 하려했는지 드러낼 수 있다.
